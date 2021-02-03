@@ -1,10 +1,22 @@
-:root {--brand-color: #2196F3;
+:root {
+  --first-color: #2196F3;
+  --second-color: #212121;
+  --third-color: #757575;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
+ul{
+  list-style: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header CSS */
 .logo{
   position: absolute; 
   width: 145px;
@@ -18,7 +30,9 @@ a{
   line-height: 35,96px;    
 
   /* identical to box height */ 
-  letter-spacing: 0.03em; color: #000;}
+  letter-spacing: 0.03em; 
+  color: var(--second-color);
+}
 
 .logo-web{
   font-family: 'Raleway', sans-serif;
@@ -26,19 +40,23 @@ a{
   font-style: normal;
   font-size: 26px;
   line-height: 30,52px; 
-  color: var(--brand-color);
+  color: var(--first-color);
 }
 
-/* .h1-hero-bg{
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+.links-nav .link-nav{
+  color: var(--third-color);
+}
 
-  background: #2F303A;
-} */
+.links-nav .link-nav:hover,
+.links-nav .link-nav:focus{
+  color: var(--first-color);
+}
 
+.current{
+  color: var(--first-color);
+}
+
+/* CSS for main page */
 .h1-hero-text{
 
   /* position: absolute; */
@@ -98,12 +116,18 @@ a{
   color: #FFF;
 }
 
-.links-nav .link-nav{
-  color: #212121;
-}
-
-.links-nav .link-nav:hover{
-  color: var(--brand-color);
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .filter .filter-items{
