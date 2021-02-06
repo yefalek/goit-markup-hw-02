@@ -18,7 +18,9 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-h2,h3{color: var (var(--second-color))}
+h2,h3{
+  color: var(--second-color);
+}
 
 .visually-hidden{
   position: absolute;
@@ -41,7 +43,7 @@ h2,h3{color: var (var(--second-color))}
   font-style: normal;    
   font-weight: bold;    
   font-size: 26px;   
-  line-height: 35,96px;
+  line-height: 35px;
   letter-spacing: 0.03em; 
   color: var(--second-color);
 }
@@ -54,7 +56,7 @@ h2,h3{color: var (var(--second-color))}
 .links-nav .link-nav{
   color: var(--third-color);
   
-  width: 500;
+  width: 500px;
   font-style: normal;
   font-size: 14px;
   line-height: 16px;
@@ -89,7 +91,7 @@ h2,h3{color: var (var(--second-color))}
   font-style: normal;    
   font-weight: bold;    
   font-size: 26px;   
-  line-height: 35,96px;
+  line-height: 35px;
   letter-spacing: 0.03em; 
   color: var(--white-color);
 }
